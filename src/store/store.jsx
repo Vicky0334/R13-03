@@ -3,7 +3,7 @@
    export const store = configureStore({
     reducer: {
         counterSlice: counterSlice,
-    }
-  })
+    },
+  });
   
   export default store;
