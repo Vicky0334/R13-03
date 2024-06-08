@@ -4,17 +4,20 @@ import { asyncDecrease, increase } from "./actions/counterAction";
 import { selectCounterValue } from './reducers/selectors';
 const App = ()=> {
   const dispatch=useDispatch();
+
   const value=useSelector (selectCounterValue);
-  console.log(value);
+
+  
+
   const IncreaseHandler=()=> {
     dispatch(increase(value + 1));
-   
+    // console.log(value);
   };
   const AsyncDecreaseHandler=()=> {
     dispatch(asyncDecrease(value - 1));
-    // console.log("decrease"); 
+    // console.log("decrease"+value); 
    };
-
+  //  console.log(value);
     return (
     <div className='w-[70%] mt-10 ml-20 text-center bg-green-300'>
      <h1 className='text-6xl'>{value}</h1>
