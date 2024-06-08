@@ -19,14 +19,14 @@ const App = ()=> {
    };
   //  console.log(value);
     return (
-    <div className='w-[70%] mt-10 ml-20 text-center bg-green-300'>
+    <div className='w-[100%]  p-5 text-center bg-green-300'>
      <h1 className='text-6xl'>{value}</h1>
      <button 
      onClick={IncreaseHandler}
-     className='mt-2 px-4 py-2 rounded-full  bg-blue-500'>Increase Counter by 1</button>
+     className='mt-2  '>Increase Counter by 1</button>
     <button
      onClick={AsyncDecreaseHandler}
-     className='mt-2 ml-3 px-4 py-2 rounded-full  bg-blue-500'>Decrease Counter by 1</button>
+     className='mt-2 ml-3 '>Decrease Counter by 1</button>
         </div>
   )
 }
